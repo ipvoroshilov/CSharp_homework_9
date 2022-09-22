@@ -7,6 +7,14 @@ string PrintNumbersFromTo(int M, int N)
     if (M == N) return $"{N}.";
     return  $"{M}" + ", " + PrintNumbersFromTo (M + 1, N);
 }
-int M = 1;
-int N = 5;
-Console.WriteLine(PrintNumbersFromTo(M, N));
+try
+{
+    Console.Write("Введите начальное число: \t");
+    int M = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите конечное число: \t");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(PrintNumbersFromTo(M, N));}
+catch
+{
+    Console.WriteLine("error");
+}
