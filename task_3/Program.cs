@@ -9,11 +9,11 @@ int AckermanRecursion(int m, int n)
 }
 try
 {
-Console.WriteLine("Ввведите первое неотрицательное число: /t");
+Console.Write("Ввведите первое неотрицательное число: \t");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Ввведите второе неотрицательное число: /t");
+Console.Write("Ввведите второе неотрицательное число: \t");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(AckermanRecursion(m, n));
+Console.WriteLine("Ответ: \t\t\t\t\t" + AckermanRecursion(m, n));
 }
 catch
 {
